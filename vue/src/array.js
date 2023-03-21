@@ -1,3 +1,0 @@
-const array = [{}]
-
-export { array }
