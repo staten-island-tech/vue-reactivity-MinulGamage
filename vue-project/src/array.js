@@ -46,5 +46,13 @@ const monkeys = [
     Dangerous: 'Not Dangerous',
     Habitat: 'South West China',
     img: ''
+  },
+  {
+    species: 'Golden Snub-Nosed Monkey',
+    price: 20700.99,
+    InStock: 'Currently In Stock',
+    Dangerous: 'Not Dangerous',
+    Habitat: 'South West China',
+    img: ''
   }
 ]
