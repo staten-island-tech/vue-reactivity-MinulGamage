@@ -1,6 +1,4 @@
-<script setup>
-import TheWelcome from '../components/TheWelcome.vue'
-</script>
+<script setup></script>
 
 <template>
   <main>
@@ -11,7 +9,13 @@ import TheWelcome from '../components/TheWelcome.vue'
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
       </head>
-      <body></body>
+      <body>
+        <h1 class="header">Monkeys For Sale</h1>
+
+        <template>
+          <div></div>
+        </template>
+      </body>
     </html>
   </main>
 </template>

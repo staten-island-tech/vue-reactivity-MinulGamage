@@ -1,6 +1,5 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
@@ -79,5 +78,9 @@ nav a:first-of-type {
     padding: 1rem 0;
     margin-top: 1rem;
   }
+}
+
+body {
+  background-color: cadetblue;
 }
 </style>
