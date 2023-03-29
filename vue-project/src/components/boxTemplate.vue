@@ -15,7 +15,7 @@ export default {
   name: 'boxTemplate',
   props: {
     species: String,
-    Img: String,
+    img: String,
     price: Number,
     Habitat: String,
     dangerous: String,

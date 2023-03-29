@@ -56,3 +56,6 @@ const monkeys = [
     img: ''
   }
 ]
+
+
+export { monkeys }
