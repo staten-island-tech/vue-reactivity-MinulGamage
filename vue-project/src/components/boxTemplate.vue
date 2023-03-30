@@ -1,8 +1,8 @@
 <template>
   <div class="box">
     <h2 class="name">{{ species }}</h2>
-    <img src="{{ Img }}" alt="Image of Monkey" />
-    <h3 class="price">{{ price }}</h3>
+    <img class="image" v-bind:src="img" v-bind:alt="img" />
+    <h3 class="price">${{ price }}</h3>
     <h3 class="Habitat">{{ Habitat }}</h3>
     <h3 class="dangerous">{{ dangerous }}</h3>
     <h3 class="InStock">{{ InStock }}</h3>

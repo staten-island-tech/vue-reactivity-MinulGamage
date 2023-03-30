@@ -27,3 +27,19 @@ export default {
     />
   </div>
 </template>
+
+<style>
+.box {
+  border: 3px solid black;
+  width: 70vw;
+  height: 70vh;
+  margin: 10px auto;
+}
+
+.image {
+  width: 25vw;
+  height: 40vh;
+  justify-content: center;
+  text-align: center;
+}
+</style>
