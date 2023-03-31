@@ -3,16 +3,17 @@ import { RouterLink, RouterView } from 'vue-router'
 </script>
 
 <template>
-  <header>
-    <div class="wrapper">
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-      </nav>
-      <nav>
-        <RouterLink to="/shoppingCart">🛒</RouterLink>
-      </nav>
-    </div>
-  </header>
+  <div class="headerDIV">
+    <h1 class="header">Monkeys For Sale</h1>
+  </div>
+  <div class="wrapper">
+    <nav>
+      <RouterLink to="/">Home</RouterLink>
+    </nav>
+    <nav>
+      <RouterLink to="/shoppingCart">🛒</RouterLink>
+    </nav>
+  </div>
 
   <RouterView />
 </template>
@@ -23,11 +24,15 @@ header {
   max-height: 100vh;
 }
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
+.header {
+  font-size: 40px;
+  font-weight: bold;
 }
-
+.linkDIV {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 nav {
   width: 100%;
   font-size: 12px;
@@ -58,10 +63,6 @@ nav a:first-of-type {
     display: flex;
     place-items: center;
     padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
   }
 
   header .wrapper {

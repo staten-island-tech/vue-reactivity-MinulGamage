@@ -19,7 +19,7 @@ export default {
     price: Number,
     Habitat: String,
     dangerous: String,
-    InStock: Boolean
+    InStock: String
   }
 }
 </script>

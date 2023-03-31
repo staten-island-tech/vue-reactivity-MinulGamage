@@ -14,8 +14,7 @@ export default {
 </script>
 
 <template>
-  <h1 class="header">Monkeys For Sale</h1>
-  <div>
+  <div class="Parent-Box">
     <boxTemplate
       v-for="monkey in monkeys"
       v-bind:key="monkey"
@@ -24,22 +23,52 @@ export default {
       :price="monkey.price"
       :Habitat="monkey.Habitat"
       :dangerous="monkey.dangerous"
+      :InStock="monkey.InStock"
     />
   </div>
 </template>
 
 <style>
 .box {
-  border: 3px solid black;
-  width: 70vw;
+  border: 4px solid black;
+  border-radius: 10%;
+  width: 30vw;
   height: 70vh;
-  margin: 10px auto;
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
 }
 
+.name {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+}
 .image {
   width: 25vw;
   height: 40vh;
   justify-content: center;
+  margin: 10px auto;
+  text-align: center;
+}
+.price {
+  text-align: center;
+}
+
+.Buy {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.Habitat {
+  text-align: center;
+}
+.dangerous {
+  text-align: center;
+}
+.InStock {
   text-align: center;
 }
 </style>

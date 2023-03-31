@@ -9,3 +9,7 @@ const app = createApp(App)
 app.use(router)
 
 app.mount('#app')
+
+/* export const store = reactive {(
+    cartarray: []
+)}; */
