@@ -17,7 +17,6 @@
       "
       class="Buy"
     >
-      Add to Cart
       {{ buttonLabel }}
     </button>
   </div>

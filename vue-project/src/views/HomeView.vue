@@ -24,6 +24,7 @@ export default {
       :Habitat="monkey.Habitat"
       :dangerous="monkey.dangerous"
       :InStock="monkey.InStock"
+      :buttonLabel="`Add To Cart`"
     />
   </div>
 </template>
