@@ -7,7 +7,7 @@ export default {
   components: { boxTemplate },
   data() {
     return {
-      cartItems,
+      monkeys,
       currentPrice: 0,
       price: new Intl.NumberFormat('en-US', {
         style: 'currency',

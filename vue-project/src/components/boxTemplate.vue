@@ -7,17 +7,25 @@
     <h3 class="dangerous">{{ dangerous }}</h3>
     <h3 class="InStock">{{ InStock }}</h3>
     <button
-      @click.self="addToShoppingCart({
-    name: monkey.
-    "
+      @click.self="
+        addToShoppingCart({
+          name: species,
+          image: img,
+          price: price,
+          count: 1
+        })
+      "
       class="Buy"
     >
       Add to Cart
+      {{ buttonLabel }}
     </button>
   </div>
 </template>
 
 <script>
+import { reactive } from 'vue'
+export const monkeys = reactive([])
 export default {
   name: 'boxTemplate',
   props: {
@@ -26,7 +34,13 @@ export default {
     price: Number,
     Habitat: String,
     dangerous: String,
-    InStock: String
+    InStock: String,
+    buttonLabel: String
+  },
+  methods: {
+    addToShoppingCart(object) {
+      monkeys.push(object)
+    }
   }
 }
 </script>
