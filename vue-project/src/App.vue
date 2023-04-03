@@ -22,20 +22,17 @@ header {
   max-height: 100vh;
 }
 
-.header {
-  font-size: 40px;
+.headerDIV {
+  font-size: 30px;
   font-weight: bold;
+  text-align: center;
 }
-.linkDIV {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
+
 nav {
   width: 100%;
   font-size: 12px;
   text-align: center;
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 
 nav a.router-link-exact-active {
@@ -63,10 +60,11 @@ nav a:first-of-type {
     padding-right: calc(var(--section-gap) / 2);
   }
 
-  header .wrapper {
+  .wrapper {
     display: flex;
     place-items: flex-start;
     flex-wrap: wrap;
+    width: 100vw;
   }
 
   nav {

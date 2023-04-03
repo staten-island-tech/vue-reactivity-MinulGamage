@@ -1,10 +1,10 @@
 <script>
 import { monkeys } from '../array'
-import boxTemplate from '../components/boxTemplate.vue'
+import CartBox from '../components/icons/cartTemplate.vue'
 
 export default {
   name: 'ShoppingCart',
-  components: { boxTemplate },
+  components: { CartBox },
   data() {
     return {
       monkeys,
@@ -24,7 +24,7 @@ export default {
     <h1>Shopping Cart</h1>
   </div>
   <div class="Cart-Box">
-    <boxTemplate
+    <CartBox
       v-for="monkey in monkeys"
       v-bind:key="monkey"
       :species="monkey.species"

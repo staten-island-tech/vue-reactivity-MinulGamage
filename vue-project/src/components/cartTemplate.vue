@@ -1,13 +1,14 @@
 <script>
 import { monkeys } from './boxTemplate.vue'
 export default {
+  name: 'CartBox',
   data() {
     return {
       monkeys
     }
   },
   methods: {
-    addToCart(object) {
+    removefromShoppingCart(object) {
       console.log(object)
       let box = monkey.find((monkey) => monkey.species === object.species)
       monkeys.splice(box, 1)
