@@ -9,8 +9,6 @@ import { RouterLink, RouterView } from 'vue-router'
   <div class="wrapper">
     <nav>
       <RouterLink to="/">Home</RouterLink>
-    </nav>
-    <nav>
       <RouterLink to="/shoppingCart">🛒</RouterLink>
     </nav>
   </div>

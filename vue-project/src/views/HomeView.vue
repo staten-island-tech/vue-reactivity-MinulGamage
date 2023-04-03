@@ -33,12 +33,16 @@ export default {
   border: 4px solid black;
   border-radius: 10%;
   width: 30vw;
-  height: 70vh;
+  height: 90vh;
   margin: 20px auto;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
+}
+
+.box:hover {
+  transform: scale(105%);
 }
 
 .name {
@@ -58,9 +62,11 @@ export default {
 }
 
 .Buy {
+  display: flex;
   text-align: center;
   align-items: center;
   justify-content: center;
+  width: 10vw;
 }
 .Habitat {
   text-align: center;

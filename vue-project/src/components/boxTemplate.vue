@@ -6,7 +6,14 @@
     <h3 class="Habitat">{{ Habitat }}</h3>
     <h3 class="dangerous">{{ dangerous }}</h3>
     <h3 class="InStock">{{ InStock }}</h3>
-    <button class="Buy">Add to Cart</button>
+    <button
+      @click.self="addToShoppingCart({
+    name: monkey.
+    "
+      class="Buy"
+    >
+      Add to Cart
+    </button>
   </div>
 </template>
 
