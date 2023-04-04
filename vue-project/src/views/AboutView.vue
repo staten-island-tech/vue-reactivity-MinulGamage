@@ -1,7 +1,6 @@
 <script>
 import { monkeys } from '../array'
 import CartBox from '../components/cartTemplate.vue'
-import boxTemplate from '../components/boxTemplate.vue'
 
 export default {
   name: 'ShoppingCart',

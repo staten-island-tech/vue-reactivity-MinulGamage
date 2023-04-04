@@ -12,9 +12,10 @@ export default {
     removefromShoppingCart(object) {
       console.log(object)
       let box = monkeyItems.find((monkey) => monkey.species === object.species)
-      console.log(card.count)
-      if (card.count > 1) {
-        card.count - 1
+      console.log(box)
+      console.log(box.count)
+      if (box.count > 1) {
+        box.count - 1
       } else {
         monkeyItems.splice(box, 1)
       }
