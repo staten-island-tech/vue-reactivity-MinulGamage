@@ -6,9 +6,6 @@ export default {
     species: String,
     img: String,
     price: Number,
-    Habitat: String,
-    dangerous: String,
-    InStock: String,
     buttonLabel: String
   },
   methods: {
@@ -17,7 +14,7 @@ export default {
       let box = monkeyItems.find((monkey) => monkey.species === object.species)
       console.log(card.count)
       if (card.count > 1) {
-        card.count -= 1
+        card.count - 1
       } else {
         monkeyItems.splice(box, 1)
       }
@@ -31,6 +28,8 @@ export default {
     <h2 class="name">{{ species }}</h2>
     <img class="image" v-bind:src="img" v-bind:alt="img" />
     <h3 class="price">Price: ${{ price }}</h3>
-    <button @click="removefromShoppingCart" class="Remove">Remove from Cart</button>
+    <button @click="removefromShoppingCart({ species: species })" class="Remove">
+      Remove from Cart
+    </button>
   </div>
 </template>

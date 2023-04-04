@@ -31,21 +31,18 @@ export default {
       :species="monkey.species"
       :img="monkey.img"
       :price="monkey.price"
-      :Habitat="monkey.Habitat"
-      :dangerous="monkey.dangerous"
-      :InStock="monkey.InStock"
       :buttonLabel="`Remove From Cart`"
     />
   </div>
 </template>
 
 <style>
-.Cart-Box {
+.CartBox {
   border: 4px solid black;
   border-radius: 10%;
   width: 30vw;
   height: 90vh;
-  margin: 20px auto;
+  margin: 40px auto;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;

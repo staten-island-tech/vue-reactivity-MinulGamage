@@ -35,7 +35,7 @@ export default {
   border-radius: 10%;
   width: 30vw;
   height: 90vh;
-  margin: 20px auto;
+  margin: 40px auto;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -62,7 +62,7 @@ export default {
   text-align: center;
 }
 
-.Buy {
+.Remove {
   display: flex;
   text-align: center;
   align-items: center;
