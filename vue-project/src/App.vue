@@ -76,8 +76,4 @@ nav a:first-of-type {
     margin-top: 1rem;
   }
 }
-
-body {
-  background-color: cadetblue;
-}
 </style>

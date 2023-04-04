@@ -78,4 +78,7 @@ export default {
 .InStock {
   text-align: center;
 }
+body {
+  background-color: cadetblue;
+}
 </style>

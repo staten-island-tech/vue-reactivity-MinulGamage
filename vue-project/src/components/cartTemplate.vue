@@ -1,17 +1,26 @@
 <script>
-import { monkeys } from './boxTemplate.vue'
+import { monkeyItems } from './boxTemplate.vue'
 export default {
   name: 'CartBox',
-  data() {
-    return {
-      monkeys
-    }
+  props: {
+    species: String,
+    img: String,
+    price: Number,
+    Habitat: String,
+    dangerous: String,
+    InStock: String,
+    buttonLabel: String
   },
   methods: {
     removefromShoppingCart(object) {
       console.log(object)
-      let box = monkey.find((monkey) => monkey.species === object.species)
-      monkeys.splice(box, 1)
+      let box = monkeyItems.find((monkey) => monkey.species === object.species)
+      console.log(card.count)
+      if (card.count > 1) {
+        card.count -= 1
+      } else {
+        monkeyItems.splice(box, 1)
+      }
     }
   }
 }
@@ -19,12 +28,9 @@ export default {
 
 <template>
   <div class="CartBox">
-    <h2 class="Cartname">{{ species }}</h2>
-    <img class="Cartimage" v-bind:src="img" v-bind:alt="img" />
-    <h3 class="Cartprice">${{ price }}</h3>
-    <h3 class="CartHabitat">{{ Habitat }}</h3>
-    <h3 class="Cartdangerous">{{ dangerous }}</h3>
-    <h3 class="CartInStock">{{ InStock }}</h3>
+    <h2 class="name">{{ species }}</h2>
+    <img class="image" v-bind:src="img" v-bind:alt="img" />
+    <h3 class="price">Price: ${{ price }}</h3>
     <button @click="removefromShoppingCart" class="Remove">Remove from Cart</button>
   </div>
 </template>

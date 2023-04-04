@@ -2,9 +2,9 @@
   <div class="box">
     <h2 class="name">{{ species }}</h2>
     <img class="image" v-bind:src="img" v-bind:alt="img" />
-    <h3 class="price">${{ price }}</h3>
-    <h3 class="Habitat">{{ Habitat }}</h3>
-    <h3 class="dangerous">{{ dangerous }}</h3>
+    <h3 class="price">Price: ${{ price }}</h3>
+    <h3 class="Habitat">Habitat: {{ Habitat }}</h3>
+    <h3 class="dangerous">Danger Level: {{ dangerous }}</h3>
     <h3 class="InStock">{{ InStock }}</h3>
     <button
       @click.self="
@@ -24,8 +24,16 @@
 
 <script>
 import { reactive } from 'vue'
-export const monkeys = reactive([])
+export const monkeyItems = reactive([])
 export default {
+  data() {
+    return {
+      price: new Intl.NumberFormat('en-US', {
+        style: 'currency',
+        currency: 'USD'
+      })
+    }
+  },
   name: 'boxTemplate',
   props: {
     species: String,
@@ -38,7 +46,8 @@ export default {
   },
   methods: {
     addToShoppingCart(object) {
-      monkeys.push(object)
+      monkeyItems.push(object)
+      console.log(monkeyItems)
     }
   }
 }
